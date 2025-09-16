@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>股市監控面板</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Inter', 'sans-serif'],
+              'mono': ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+              'gray-950': '#09090B',
+              'gray-900': '#18181B',
+              'gray-800': '#27272A',
+              'gray-700': '#3F3F46',
+              'gray-400': '#A1A1AA',
+              'cyan-400': '#22D3EE',
+              'cyan-500': '#06B6D4',
+              'green-400': '#4ADE80',
+              'red-400': '#F87171',
+              'amber-400': '#FBBF24',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@upstash/redis": "https://aistudiocdn.com/@upstash/redis@^1.35.3",
+    "@vercel/kv": "https://aistudiocdn.com/@vercel/kv@^3.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-950 text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

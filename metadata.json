@@ -1,0 +1,5 @@
+{
+  "name": " 股市唷",
+  "description": "A minimalist control panel to configure and monitor a serverless stock market alerting bot. Set your Line Notify token and view the bot's status and recent alerts.",
+  "requestFramePermissions": []
+}
